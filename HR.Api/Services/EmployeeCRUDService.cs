@@ -2,31 +2,39 @@
 using HR.Api.DataAccess.Entities;
 using HR.Api.Models;
 using HR.DataAccess;
+using HR.DataAccess.Entities;
 
 namespace HR.Api.Services
 {
     public class EmployeeCRUDService : IGenericCRUDService<EmployeeModel>
     {
         private readonly IGenericRepository<Employee> _employeeRepository;
-        public EmployeeCRUDService(IGenericRepository<Employee> employeeRepository)
+        private readonly IGenericRepository<Address> _adressRepository;
+        public EmployeeCRUDService(IGenericRepository<Employee> employeeRepository, IGenericRepository<Address> addressRepository)
         {
             _employeeRepository = employeeRepository;
+            _adressRepository = addressRepository;
         }
         public async Task<EmployeeModel> Create(EmployeeModel model)
         {
+            var existingAddress = await _adressRepository.Get(model.AddressId);
             var employee = new Employee
             {
                 FullName = model.FullName,
                 Department = model.Department,
                 Email = model.Email
             };
+            if (existingAddress != null)
+                employee.address = existingAddress;
+
             var createdEmployee = await _employeeRepository.Create(employee);
             var result = new EmployeeModel
             {
                 FullName = createdEmployee.FullName,
                 Department = createdEmployee.Department,
                 Email = createdEmployee.Email,
-                Id = createdEmployee.Id
+                Id = createdEmployee.Id,
+                AddressId = createdEmployee.address.Id
             };
             return result;
         }
