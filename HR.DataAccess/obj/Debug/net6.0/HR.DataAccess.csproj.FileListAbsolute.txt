@@ -1,0 +1,14 @@
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\bin\Debug\net6.0\HR.DataAccess.deps.json
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\bin\Debug\net6.0\HR.DataAccess.dll
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\bin\Debug\net6.0\HR.DataAccess.pdb
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.csproj.AssemblyReference.cache
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.AssemblyInfoInputs.cache
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.AssemblyInfo.cs
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.dll
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\refint\HR.DataAccess.dll
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.pdb
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\ref\HR.DataAccess.dll
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\bin\Debug\net6.0\HR.DataAccess.runtimeconfig.json
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.genruntimeconfig.cache
