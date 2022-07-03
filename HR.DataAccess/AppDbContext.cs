@@ -1,4 +1,5 @@
-﻿using HR.Api.DataAccess;
+﻿using HR.Api.DataAccess.Entities;
+using HR.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HR.DataAccess
@@ -11,5 +12,7 @@ namespace HR.DataAccess
         }
 
         public DbSet<Employee> Employees { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
     }
 }

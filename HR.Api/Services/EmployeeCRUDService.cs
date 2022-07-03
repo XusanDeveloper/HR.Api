@@ -1,4 +1,5 @@
 ﻿using HR.Api.DataAccess;
+using HR.Api.DataAccess.Entities;
 using HR.Api.Models;
 using HR.DataAccess;
 
@@ -6,8 +7,8 @@ namespace HR.Api.Services
 {
     public class EmployeeCRUDService : IGenericCRUDService<EmployeeModel>
     {
-        private readonly IEmployeerepository _employeeRepository;
-        public EmployeeCRUDService(IEmployeerepository employeeRepository)
+        private readonly IGenericRepository<Employee> _employeeRepository;
+        public EmployeeCRUDService(IGenericRepository<Employee> employeeRepository)
         {
             _employeeRepository = employeeRepository;
         }
@@ -19,7 +20,7 @@ namespace HR.Api.Services
                 Department = model.Department,
                 Email = model.Email
             };
-            var createdEmployee = await _employeeRepository.CreateEmployee(employee);
+            var createdEmployee = await _employeeRepository.Create(employee);
             var result = new EmployeeModel
             {
                 FullName = createdEmployee.FullName,
@@ -32,12 +33,12 @@ namespace HR.Api.Services
 
         public Task<bool> Delete(int id)
         {
-            return _employeeRepository.DeleteEmployee(id);
+            return _employeeRepository.Delete(id);
         }
 
         public async Task<EmployeeModel> Get(int id)
         {
-            var employee = await _employeeRepository.GetEmployee(id);
+            var employee = await _employeeRepository.Get(id);
             var model = new EmployeeModel
             {
                 Id = employee.Id,
@@ -51,7 +52,7 @@ namespace HR.Api.Services
         public async Task<IEnumerable<EmployeeModel>> GetAll()
         {
             var result = new List<EmployeeModel>();
-            var empployees = await _employeeRepository.GetEmployees();
+            var empployees = await _employeeRepository.GetAll();
             foreach (var employee in empployees)
             {
                 var model = new EmployeeModel
@@ -75,7 +76,7 @@ namespace HR.Api.Services
                 Email = model.Email,
                 Id = model.Id
             };
-            var updatesEmployee = await _employeeRepository.UpdateEmployee(id, employee);
+            var updatesEmployee = await _employeeRepository.Update(id, employee);
             var result = new EmployeeModel
             {
                 FullName = updatesEmployee.FullName,

@@ -12,3 +12,4 @@ C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.pd
 C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\ref\HR.DataAccess.dll
 C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\bin\Debug\net6.0\HR.DataAccess.runtimeconfig.json
 C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.genruntimeconfig.cache
+C:\Users\PRO\source\repos\HR.Api\HR.DataAccess\obj\Debug\net6.0\HR.DataAccess.sourcelink.json

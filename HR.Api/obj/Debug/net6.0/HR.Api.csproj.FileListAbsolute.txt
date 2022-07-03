@@ -61,3 +61,4 @@ C:\Users\PRO\source\repos\HR.Api\HR.Api\bin\Debug\net6.0\HR.DataAccess.dll
 C:\Users\PRO\source\repos\HR.Api\HR.Api\bin\Debug\net6.0\HR.DataAccess.pdb
 C:\Users\PRO\source\repos\HR.Api\HR.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\PRO\source\repos\HR.Api\HR.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\PRO\source\repos\HR.Api\HR.Api\obj\Debug\net6.0\HR.Api.sourcelink.json
